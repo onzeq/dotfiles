@@ -207,7 +207,7 @@ bindsym XF86MonBrightnessDown exec brightnessctl set 10%- # decrease screen brig
 exec_always --no-startup-id picom -b
 
 # set background
-exec --no-startup-id feh --bg-fill /home/jake/Pictures/Wallpapers/lake.jpg
+exec --no-startup-id feh --bg-fill $HOME/Pictures/Wallpapers/lake.jpg
 
 # set touchscreen and pen to built in monitor
 exec --no-startup-id xinput map-to-output 15 eDP-1 && xinput map-to-output 16 eDP-1 && xinput map-to-output 24 eDP-1
