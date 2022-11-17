@@ -135,7 +135,7 @@ fi
 
 #####ROS##### 
 source /opt/ros/noetic/setup.bash
-source /home/jake/catkin_ws/devel/setup.bash
+source $HOME/catkin_ws/devel/setup.bash
 #Exports
 #exports to use raspberry as rosmaster
 export ROS_IP=192.168.0.82
@@ -174,7 +174,7 @@ up () {
 alias strip_spaces='python ~/scripts/strip_spaces.py -f' 
 
 #python script invoke for TV Neuhausen lists
-alias joomla='python3 /home/jake/projects/joomla_anmeldung_clipboard/joomla_reservations.py'
+alias joomla='python3 $HOME/projects/joomla_anmeldung_clipboard/joomla_reservations.py'
 #set built-in audio as default
 
 alias speaker_set_default="pactl set-default-sink 'alsa_output.pci-0000_00_1f.3-platform-skl_hda_dsp_generic.HiFi__hw_sofhdadsp__sink'"
@@ -205,7 +205,7 @@ alias fn="echo 0 | sudo tee /sys/module/hid_apple/parameters/fnmode"
 alias explorer="nautilus --browser . &"
 
 #open zotero 
-alias zotero="/home/jake/programs/Zotero/zotero"
+alias zotero="$PATH/programs/Zotero/zotero"
 
 #connect to headphones
 alias bt1="bluetoothctl connect 50:C2:ED:2F:23:EB"
@@ -221,7 +221,7 @@ alias light_100="sudo brightnessctl set 100%"
 alias light_50="sudo brightnessctl set 50%"
 
 # variable for exercism workspace
-export WSEXERCISM='/home/jake/snap/exercism/current/exercism/rust'
+export WSEXERCISM='$HOME/snap/exercism/current/exercism/rust'
 
 # variable for workspace studies
-export STUDY='/home/jake/OneDrive/Studium/02_Master_ESE/1_Semester'
+export STUDY='$HOME/OneDrive/Studium/02_Master_ESE/1_Semester'
