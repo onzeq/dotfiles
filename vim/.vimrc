@@ -9,3 +9,4 @@ nnoremap <Leader>ncc :set colorcolumn=-80<cr>
 inoremap jj <esc>
 set number
 set rnu
+set splitright
