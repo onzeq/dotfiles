@@ -3,12 +3,32 @@
     "security.workspace.trust.untrustedFiles": "open",
     "editor.fontSize": 20,
     "terminal.integrated.fontSize": 18,
+    "vim.leader": "<space>",
+    "vim.easymotion": true,
+    "vim.incsearch": true,
+    "vim.useSystemClipboard": true,
+    "vim.useCtrlKeys": true,
     "vim.insertModeKeyBindings": [
         {
             "before": ["j", "j"],
             "after": ["<ESC>"]
         }
     ],
+    "vim.normalModeKeyBindingsNonRecursive": [
+        {
+          "before": ["<leader>", "d"],
+          "after": ["d", "d"]
+        },
+        {
+          "before": ["<C-n>"],
+          "commands": [":nohl"]
+        },
+        {
+          "before": ["K"],
+          "commands": ["lineBreakInsert"],
+          "silent": true
+        }
+      ],
     "vim.vimrc.enable": true,
     "vim.vimrc.path": "~/.vimrc",
     "python.analysis.extraPaths": [
