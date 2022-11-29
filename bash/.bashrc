@@ -220,8 +220,34 @@ alias light_30="sudo brightnessctl set 30%"
 alias light_100="sudo brightnessctl set 100%"
 alias light_50="sudo brightnessctl set 50%"
 
+# map input to main screen
+alias map_input="python3 $HOME/scripts/map_input.py"
+
+# starting nvim
+alias vim="nvim"
+
 # variable for exercism workspace
 export WSEXERCISM='$HOME/snap/exercism/current/exercism/rust'
 
 # variable for workspace studies
-export STUDY='$HOME/OneDrive/Studium/02_Master_ESE/1_Semester'
+export STUDY='~/OneDrive/Studium/02_Master_ESE/1_Semester'
+[ -f ~/.fzf.bash ] && source ~/.fzf.bash
+
+# add riscv to path
+export PATH=/opt/riscv/bin:$PATH
+
+# function to create and than change directory
+mkcd() {
+	mkdir -p "$1"
+	cd "$1"
+}
+
+# function to go up n directories
+function cd_up() {
+  cd $(printf "%0.s../" $(seq 1 $1 ));
+}
+alias 'cd..'='cd_up'
+
+
+
+neofetch
