@@ -1,0 +1,22 @@
+{
+    "files.autoSave": "afterDelay",
+    "security.workspace.trust.untrustedFiles": "open",
+    "editor.fontSize": 20,
+    "terminal.integrated.fontSize": 18,
+    "vim.insertModeKeyBindings": [
+        {
+            "before": ["j", "j"],
+            "after": ["<ESC>"]
+        }
+    ],
+    "vim.vimrc.enable": true,
+    "vim.vimrc.path": "~/.vimrc",
+    "python.analysis.extraPaths": [
+        "/home/jake/.local/lib/python3.8/site-packages/pyperclip/"
+    ],
+    "terminal.integrated.enableMultiLinePasteWarning": false,
+    "python.defaultInterpreterPath": "/usr/bin/python3",
+    "explorer.confirmDelete": false,
+    "glassit.alpha": 201,
+    "editor.lineNumbers": "relative",
+}

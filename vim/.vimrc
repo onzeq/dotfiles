@@ -10,3 +10,4 @@ inoremap jj <esc>
 set number
 set rnu
 set splitright
+set clipboard=unnamedplus
