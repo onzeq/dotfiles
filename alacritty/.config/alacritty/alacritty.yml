@@ -26,7 +26,7 @@ font:
     family: SourceCodePro
     style: Bold Italic
 
-  size: 15
+  size: 10
 
 colors:
   primary:

@@ -246,3 +246,8 @@ bindsym $mod+x move workspace to output DVI-I-1-1
 
 # configure explorer
 bindsym $mod+e exec --no-startup-id nautilus
+
+# execute blueman
+exec blueman-applet
+# execute pasystray
+exec /usr/bin/pasystray
