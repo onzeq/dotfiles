@@ -171,7 +171,7 @@ up () {
 #alias python='python3'
 
 #script to remove whitespaces in file names
-alias strip_spaces='python ~/scripts/strip_spaces.py -f' 
+alias strip_spaces='python ~/scripts/strip_spaces.py' 
 
 #python script invoke for TV Neuhausen lists
 alias joomla='python3 $HOME/projects/joomla_anmeldung_clipboard/joomla_reservations.py'

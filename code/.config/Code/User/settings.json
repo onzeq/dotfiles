@@ -1,13 +1,15 @@
 {
     "files.autoSave": "afterDelay",
     "security.workspace.trust.untrustedFiles": "open",
-    "editor.fontSize": 20,
+    "editor.fontSize": 16,
     "terminal.integrated.fontSize": 18,
     "vim.leader": "<space>",
     "vim.easymotion": true,
     "vim.incsearch": true,
     "vim.useSystemClipboard": true,
     "vim.useCtrlKeys": true,
+    "vim.vimrc.enable": true,
+    "vim.vimrc.path": "~/.vimrc",
     "vim.insertModeKeyBindings": [
         {
             "before": ["j", "j"],
@@ -29,14 +31,15 @@
           "silent": true
         }
       ],
-    "vim.vimrc.enable": true,
-    "vim.vimrc.path": "~/.vimrc",
+
     "python.analysis.extraPaths": [
         "/home/jake/.local/lib/python3.8/site-packages/pyperclip/"
     ],
+    
     "terminal.integrated.enableMultiLinePasteWarning": false,
     "python.defaultInterpreterPath": "/usr/bin/python3",
     "explorer.confirmDelete": false,
-    "glassit.alpha": 201,
-    "editor.lineNumbers": "relative",
+    "editor.lineNumbers": "on",
+    "glassit-linux.opacity": 80
+    
 }

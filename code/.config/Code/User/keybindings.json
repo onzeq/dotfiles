@@ -44,13 +44,12 @@
     },
     // toggle between editor and terminal
     {
-        "key":     "ctrl+[backslash]",
-        "command": "workbench.action.terminal.focus"
+        "key":     "ctrl+[Quote]",
+        "command": "workbench.action.terminal.focus",
     },
     {
         "key":     "ctrl+[backslash]",
         "command": "workbench.action.focusActiveEditorGroup",
-        "when":    "terminalFocus"
     },
     // switch between terminal panes
     {
