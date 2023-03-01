@@ -1,15 +1,14 @@
 {
-    "files.autoSave": "afterDelay",
-    "security.workspace.trust.untrustedFiles": "open",
+  "security.workspace.trust.untrustedFiles": "open",
     "editor.fontSize": 16,
     "terminal.integrated.fontSize": 18,
-    "vim.leader": "<space>",
+    "vim.leader": ",",
     "vim.easymotion": true,
     "vim.incsearch": true,
     "vim.useSystemClipboard": true,
     "vim.useCtrlKeys": true,
     "vim.vimrc.enable": true,
-    "vim.vimrc.path": "~/.vimrc",
+    "vim.vimrc.path": "$HOME/.vimrc",
     "vim.insertModeKeyBindings": [
         {
             "before": ["j", "j"],
@@ -39,7 +38,8 @@
     "terminal.integrated.enableMultiLinePasteWarning": false,
     "python.defaultInterpreterPath": "/usr/bin/python3",
     "explorer.confirmDelete": false,
-    "editor.lineNumbers": "on",
-    "glassit-linux.opacity": 80
+    "editor.lineNumbers": "relative",
+    "glassit-linux.opacity": 80,
+    "files.autoSave": "afterDelay"
     
 }

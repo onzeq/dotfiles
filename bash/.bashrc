@@ -182,7 +182,7 @@ alias input_set_default="pactl set-default-source alsa_input.pci-0000_00_1f.3-pl
 alias audio_set_default="pactl set-default-source alsa_input.pci-0000_00_1f.3-platform-skl_hda_dsp_generic.HiFi__hw_sofhdadsp_6__source && pactl set-default-sink alsa_output.pci-0000_00_1f.3-platform-skl_hda_dsp_generic.HiFi__hw_sofhdadsp__sink"
 
 #update and upgrade 
-alias aptup="sudo apt update && sudo apt upgrade && sudo apt-get update && sudo apt-get upgrade"
+alias aptup="sudo apt update && sudo apt upgrade -y && sudo apt-get update -y && sudo apt-get upgrade -y"
 
 #map altgr to capslock
 alias map="xmodmap ~/.Xmodmap"
@@ -226,6 +226,9 @@ alias map_input="python3 $HOME/scripts/map_input.py"
 # starting nvim
 alias vim="nvim"
 
+# two chars for firefox
+alias ff="env MOZ_USE_XINPUT2=1 firefox"
+
 # variable for exercism workspace
 export WSEXERCISM='$HOME/snap/exercism/current/exercism/rust'
 
@@ -233,8 +236,6 @@ export WSEXERCISM='$HOME/snap/exercism/current/exercism/rust'
 export STUDY='~/OneDrive/Studium/02_Master_ESE/1_Semester'
 [ -f ~/.fzf.bash ] && source ~/.fzf.bash
 
-# add riscv to path
-export PATH=/opt/riscv/bin:$PATH
 
 # function to create and than change directory
 mkcd() {
