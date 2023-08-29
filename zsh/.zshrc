@@ -103,10 +103,13 @@ source $ZSH/oh-my-zsh.sh
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
-
+######### OWN STUFF ##########
 compinit
 _comp_options+=(globdots)
 
+prompt_dir() {
+  prompt_segment blue $CURRENT_FG '%2~'
+}
 
 xmodmap ~/.Xmodmap
 
