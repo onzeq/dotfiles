@@ -105,7 +105,7 @@ fi
 #export GCC_COLORS='error=01;31:warning=01;35:note=01;36:caret=01;32:locus=01:quote=01'
 
 # some more ls aliases
-alias ll='ls -alF'
+alias ll='ls -lF'
 alias la='ls -A'
 alias l='ls -CF'
 
@@ -177,7 +177,7 @@ alias strip_spaces='python ~/scripts/strip_spaces.py'
 alias joomla='python3 $HOME/projects/joomla_anmeldung_clipboard/joomla_reservations.py'
 #set built-in audio as default
 
-alias speaker_set_default="pactl set-default-sink 'alsa_output.pci-0000_00_1f.3-platform-skl_hda_dsp_generic.HiFi__hw_sofhdadsp__sink'"
+alias ssd="pactl set-default-sink 'alsa_output.pci-0000_00_1f.3-platform-skl_hda_dsp_generic.HiFi__hw_sofhdadsp__sink'"
 alias input_set_default="pactl set-default-source alsa_input.pci-0000_00_1f.3-platform-skl_hda_dsp_generic.HiFi__hw_sofhdadsp_6__source"
 alias audio_set_default="pactl set-default-source alsa_input.pci-0000_00_1f.3-platform-skl_hda_dsp_generic.HiFi__hw_sofhdadsp_6__source && pactl set-default-sink alsa_output.pci-0000_00_1f.3-platform-skl_hda_dsp_generic.HiFi__hw_sofhdadsp__sink"
 
@@ -249,6 +249,14 @@ function cd_up() {
 }
 alias 'cd..'='cd_up'
 
+alias set_main="xrandr --output eDP-1 --primary"
+# aliases for quick jump to study related stuff
+alias soft_eng="cd /home/jake/sem2/soft_eng"
+alias sas="cd /home/jake/sem2/sas"
+alias sig_proc="cd /home/jake/sem2/sig_proc"
+alias test_rel="cd /home/jake/sem2/test_rel"
+alias ese="cd /home/jake/OneDrive/Studium/02_Master_ESE"
 
-
+# wine executables
+alias ltspice="wine \"C:\\LTspice\\LTspice.exe\""
 neofetch

@@ -5,7 +5,10 @@
     "vim.leader": ",",
     "vim.easymotion": true,
     "vim.incsearch": true,
-    "vim.useSystemClipboard": true,
+    "editor.rulers": [79],
+    "workbench.colorCustomizations": {
+    "editorRuler.foreground": "#ff4081"
+  },
     "vim.useCtrlKeys": true,
     "vim.vimrc.enable": true,
     "vim.vimrc.path": "$HOME/.vimrc",
@@ -30,7 +33,6 @@
           "silent": true
         }
       ],
-
     "python.analysis.extraPaths": [
         "/home/jake/.local/lib/python3.8/site-packages/pyperclip/"
     ],
@@ -40,6 +42,10 @@
     "explorer.confirmDelete": false,
     "editor.lineNumbers": "relative",
     "glassit-linux.opacity": 80,
-    "files.autoSave": "afterDelay"
+    "files.autoSave": "afterDelay",
+    "[python]": {
+      "editor.formatOnType": true
+    },
+    "window.zoomLevel": 1
     
 }
