@@ -1,3 +1,4 @@
+export XDG_CONFIG_HOME=$HOME/.config
 # add matlab to path
 export PATH="/usr/local/MATLAB/R2021b/bin:$PATH"
 # variable for exercism workspace
