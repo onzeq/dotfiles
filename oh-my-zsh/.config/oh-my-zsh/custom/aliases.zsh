@@ -6,6 +6,7 @@ alias joomla='python3 $HOME/projects/joomla_anmeldung_clipboard/joomla_reservati
 #set built-in audio as default
 
 alias ssd="pactl set-default-sink 'alsa_output.pci-0000_00_1f.3-platform-skl_hda_dsp_generic.HiFi__hw_sofhdadsp__sink'"
+alias sbt="pactl set-default-sink 'bluez_sink.50_C2_ED_2F_23_EB.a2dp_sink'"
 alias input_set_default="pactl set-default-source alsa_input.pci-0000_00_1f.3-platform-skl_hda_dsp_generic.HiFi__hw_sofhdadsp_6__source"
 alias audio_set_default="pactl set-default-source alsa_input.pci-0000_00_1f.3-platform-skl_hda_dsp_generic.HiFi__hw_sofhdadsp_6__source && pactl set-default-sink alsa_output.pci-0000_00_1f.3-platform-skl_hda_dsp_generic.HiFi__hw_sofhdadsp__sink"
 
