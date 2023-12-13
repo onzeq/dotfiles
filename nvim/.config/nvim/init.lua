@@ -1,4 +1,5 @@
 -- Set <space> as the leader key
+-- j
 vim.g.mapleader = ' '
 vim.g.maplocalleader = ' '
 
@@ -78,7 +79,7 @@ end
 --  If you want to override the default filetypes that your language server will attach to you can
 --  define the property 'filetypes' to the map in question.
 local servers = {
-  -- clangd = {},
+   clangd = {},
   -- gopls = {},
   -- pyright = {},
   -- rust_analyzer = {},
@@ -165,5 +166,20 @@ cmp.setup {
     { name = 'luasnip' },
   },
 }
+
+-- function clang_format_current_buffer()
+--     vim.cmd('write')  -- Save the current buffer before formatting
+--     local format_cmd = 'clang-format -i %:p'  -- clang-format command with the "file" style
+--     local success = vim.fn.system('clang-format -i "%:p"')
+--
+--     if success == 0 then
+--         vim.cmd('e!')  -- Reload the buffer to reflect the changes
+--         vim.cmd('echom "clang-format: Formatting succeeded"')
+--     else
+--         vim.cmd('echom "clang-format: Formatting failed"')
+--     end
+-- end
+-- vim.cmd([[autocmd BufWritePre *.c,*.h lua clang_format_current_buffer()]])
+
 require('settings')
 require('keybindings')

@@ -1,27 +1,157 @@
 {
-  "security.workspace.trust.untrustedFiles": "open",
-    "editor.fontSize": 16,
-    "terminal.integrated.fontSize": 18,
-    "vim.leader": ",",
+    // VS Code settings
+    "editor.fontSize": 12,
+    "terminal.integrated.fontSize": 12,
+    "editor.rulers": [
+        79
+    ],
+    "workbench.colorCustomizations": {
+    "editorRuler.foreground": "#ff4081",
+  },
+    "editor.wordWrap": "off",
+    "terminal.integrated.enableMultiLinePasteWarning": false,
+    "python.defaultInterpreterPath": "/usr/bin/python3",
+    "explorer.confirmDelete": false,
+    "glassit-linux.opacity": 80,
+    "files.autoSave": "afterDelay",
+    "editor.lineNumbers": "relative",
+
+    // Latex
+    "latex-workshop.latex.autoBuild.cleanAndRetry.enabled": false,
+    "latex-workshop.latex.autoBuild.run": "never",
+    "latex-workshop.latex.outDir": "./Output",
+
+    // Vim specific settings & mappings
+    "vim.leader": "<SPACE>",
     "vim.easymotion": true,
     "vim.incsearch": true,
-    "editor.rulers": [79],
-    "workbench.colorCustomizations": {
-    "editorRuler.foreground": "#ff4081"
-  },
+    "vim.highlightedyank.enable": true,
+    "vim.enableNeovim": true,
+    "vim.neovimUseConfigFile": true,
+    "vim.neovimConfigPath": "$HOME/.config/nvim/init.lua",
     "vim.useCtrlKeys": true,
-    "vim.vimrc.enable": true,
-    "vim.vimrc.path": "$HOME/.vimrc",
+    "vim.useSystemClipboard": true,
+
+    // Insert Mode Mappings
     "vim.insertModeKeyBindings": [
         {
             "before": ["j", "j"],
             "after": ["<ESC>"]
+        },
+        {
+            "before": ["ctrl+c"],
+            "after": ["<ESC>"]
         }
     ],
+
+    // Visual Mode Mappigs
+    "vim.visualModeKeyBindings": [
+        {
+            "before": ["<leader>", "p"],
+            "after": "[[\"_dP]]"
+        },
+    ],
+    // Normal Mode Mappings
+    "vim.normalModeKeyBindings": [
+        {
+            "before": ["<leader>", "e"],
+            "commands": [
+            "workbench.files.action.focusFilesExplorer"
+        ]
+        },
+        {
+            "before": ["<leader>", "r"],
+            "commands": ["workbench.action.reloadWindow"]
+        },
+    {
+        "before": [";"],
+        "commands": [
+            "workbench.action.showCommands"
+        ],
+        "silent": true
+    },
+    {
+        "before": ["<C-p>"],
+        "commands": [
+            "workbench.action.quickOpen"
+        ],
+        "silent": true
+    },
+
+    // navigate through editor panes with vim keys and leader
+    {
+        "before": ["<leader>", "h"],
+        "commands": [
+            "workbench.action.navigateLeft"
+        ],
+        "silent": true
+    },
+    {
+        "before": ["<leader>", "l"],
+        "commands": [
+            "workbench.action.navigateRight"
+        ],
+        "silent": true
+    },
+    {
+        "before": ["<leader>", "j"],
+        "commands": [
+                "workbench.action.navigateDown"
+            ],
+            "silent": true
+    },
+    {
+        "before": ["<leader>", "k"],
+        "commands": [
+            "workbench.action.navigateUp"
+        ],
+        "silent": true
+    },
+
+    // create new editor panes with vim keys and leader
+    {
+        "before": ["<leader>", "H"],
+        "commands": [
+            "workbench.action.moveEditorToLeftGroup"
+        ],
+        "silent": true
+    },
+    {
+        "before": ["<leader>", "L"],
+        "commands": [
+            "workbench.action.moveEditorToRightGroup"
+        ],
+        "silent": true
+    },
+    {
+        "before": ["<leader>", "J"],
+        "commands": [
+            "workbench.action.moveEditorToBelowGroup"
+        ],
+        "silent": true
+    },
+    {
+        "before": ["<leader>", "K"],
+        "commands": [
+            "workbench.action.moveEditorToAboveGroup"
+        ],
+        "silent": true
+    }
+    ], 
+
+    // Normal mode mappings non recursive
     "vim.normalModeKeyBindingsNonRecursive": [
         {
           "before": ["<leader>", "d"],
           "after": ["d", "d"]
+        },
+        {
+          "before": ["<leader>", "o"],
+          "after": ["o", "<ESC>"]
+        },
+        {
+          "before": ["<leader>", "O"],
+          "after": ["O", "<ESC>"]
         },
         {
           "before": ["<C-n>"],
@@ -32,20 +162,8 @@
           "commands": ["lineBreakInsert"],
           "silent": true
         }
-      ],
-    "python.analysis.extraPaths": [
-        "/home/jake/.local/lib/python3.8/site-packages/pyperclip/"
+            
     ],
-    
-    "terminal.integrated.enableMultiLinePasteWarning": false,
-    "python.defaultInterpreterPath": "/usr/bin/python3",
-    "explorer.confirmDelete": false,
-    "editor.lineNumbers": "relative",
-    "glassit-linux.opacity": 80,
-    "files.autoSave": "afterDelay",
-    "[python]": {
-      "editor.formatOnType": true
-    },
-    "window.zoomLevel": 1
-    
+    "terminal.integrated.allowMnemonics": true,
+    "window.zoomLevel": 1,
 }

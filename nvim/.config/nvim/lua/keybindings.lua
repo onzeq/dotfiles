@@ -2,6 +2,7 @@ local function map(m, k, v)
     vim.keymap.set(m, k, v, { silent = true })
 end
 map('i', 'jj', '<ESC>')
+map('i', 'C-c', '<ESC>')
 -- Fix * (Keep the cursor position, don't move to next match)
 map('n', '*', '*N')
 
@@ -24,8 +25,8 @@ map('n', '<C-Q>', '<CMD>q<CR>')
 map('n', '<leader>o', 'o<ESC>')
 map('n', '<leader>O', 'O<ESC>')
 
--- Shortcut to yank register
-map({ 'n', 'x' }, '<leader>p', '"0p')
+-- greatest remap ever
+vim.keymap.set("x", "<leader>p", [["_dP]])
 
 -- Move to the next/previous buffer
 map('n', '<leader>[', '<CMD>bp<CR>')

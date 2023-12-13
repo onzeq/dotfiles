@@ -66,6 +66,15 @@
     {
         "key":     "alt+f",
         "command": "workbench.action.toggleFullScreen"
+    },
+    {
+        "key":     "alt+f",
+        "command": ""
+    },
+    {
+        "key": "ctrl+shift+m",
+        "command": "workbench.action.tasks.runTask",
+        "args": "make_workspace"
     }
 
 ]

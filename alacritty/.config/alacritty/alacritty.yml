@@ -10,20 +10,37 @@ scrolling:
   multiplier: 3
    
 font:
+  # normal:
+  #   family: Font_Awesome_6_Free-Regular-400 
+  #   style: Regular
+  #
+  # bold:
+  #   family: Font_Awesome_6_Free-Regular-400 
+  #   style: Bold
+  #
+  # italic:
+  #   family: Font_Awesome_6_Free-Regular-400 
+  #   style: Italic
+  #
+  # bold_italic:
+  #   family: Font_Awesome_6_Free-Regular-400 
+  #   style: Bold Italic
+
+
   normal:
-    family: SourceCodePro
+    family: SauceCodeProNerdFont
     style: Regular
 
   bold:
-    family: SourceCodePro
+    family: SauceCodeProNerdFont
     style: Bold
 
   italic:
-    family: SourceCodePro
+    family: SauceCodeProNerdFont
     style: Italic
 
   bold_italic:
-    family: SourceCodePro
+    family: SauceCodeProNerdFont
     style: Bold Italic
 
   size: 10

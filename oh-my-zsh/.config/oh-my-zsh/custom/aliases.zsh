@@ -59,12 +59,30 @@ alias vim="nvim"
 alias ff="env MOZ_USE_XINPUT2=1 firefox"
 
 alias set_main="xrandr --output eDP-1 --primary"
+alias set_desktop="xrandr --output DVI-I-2-2 --mode 1920x1080 --rate 60.00 --primary"
 # aliases for quick jump to study related stuff
 alias soft_eng="cd /home/jake/sem2/soft_eng"
 alias sas="cd /home/jake/sem2/sas"
 alias sig_proc="cd /home/jake/sem2/sig_proc"
 alias test_rel="cd /home/jake/sem2/test_rel"
 alias ese="cd /home/jake/OneDrive/Studium/02_Master_ESE"
+alias micro="cd /home/jake/sem3/micro"
+alias msi="cd /home/jake/sem3/msi"
+alias defu="cd /home/jake/sem3/defu"
+
 
 # wine executables
 alias ltspice="wine \"C:\\LTspice\\LTspice.exe\""
+
+# short clear command
+alias c="clear"
+# blueman manager shortcut
+alias bm="blueman-manager &"
+
+# exercism
+alias go_ex="cd $HOME/projects/exercism"
+alias arduino_ide="$HOME/arduino_ide/arduino-ide"
+alias ods="onedrive --synchronize"
+
+# i3 lock color black as standard
+alias lock="i3lock --color 000000"
