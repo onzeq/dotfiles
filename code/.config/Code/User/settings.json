@@ -12,7 +12,6 @@
     "terminal.integrated.enableMultiLinePasteWarning": false,
     "python.defaultInterpreterPath": "/usr/bin/python3",
     "explorer.confirmDelete": false,
-    "glassit-linux.opacity": 80,
     "files.autoSave": "afterDelay",
     "editor.lineNumbers": "relative",
 
@@ -166,4 +165,8 @@
     ],
     "terminal.integrated.allowMnemonics": true,
     "window.zoomLevel": 1,
+    "hediet.vscode-drawio.resizeImages": null,
+    "editor.multiCursorModifier": "ctrlCmd",
+    "scm.inputFontFamily": "",
+    "editor.fontFamily": "SauceCodeProNerdFont",
 }

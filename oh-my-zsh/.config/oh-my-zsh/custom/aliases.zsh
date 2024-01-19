@@ -86,3 +86,10 @@ alias ods="onedrive --synchronize"
 
 # i3 lock color black as standard
 alias lock="i3lock --color 000000"
+alias matr="echo 5513235"
+
+alias ffpol="sudo nvim /usr/lib/firefox/distribution/policies.json"
+alias tms="tmux new -s main"
+alias tma="tmux a -t main"
+alias i3conf="vim ~/.config/i3/config"
+alias exp="explorer ."

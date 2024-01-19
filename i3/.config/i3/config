@@ -187,7 +187,7 @@ bar {
                 statusline #dddddd
                 focused_workspace #0088CC #0088CC #ffffff
                 # active_workspace #333333 #333333 #ffffff
-                # inactive_workspace #333333 #3333
+                # inactive_workspace #333333 #333333
         }
 }
 # bar {
@@ -202,15 +202,19 @@ exec $HOME/scripts/i3/i3-natural-scrolling-and-tap/tap-to-click.sh
 exec $HOME/scripts/i3/i3-natural-scrolling-and-tap/inverse-scroll.sh
 
 # boarder width
-default_border pixel 2
+default_border pixel 1
 # set gaps
-gaps inner 10
-gaps outer 5
+gaps inner 3
+gaps outer 3
 
 # monitor setup
 #exec $HOME/scripts/i3/monitor_setup.sh
+# exec --no-startup-id xrandr --output eDP-1 --mode 1920x1080 --pos 914x1080 --output DVI-I-2-2 --primary --mode 1920x1080 --pos 0x0 --output DVI-I-1-1 --mode 1920x1080 --pos 1920x0
+# exec ~/.screenlayout/config1.sh
 exec --no-startup-id xrandr --output DVI-I-2-2 --mode 1920x1080 --rate 60.00 --right-of eDP-1 --primary --output DVI-I-1-1 --mode 1920x1080 --rate 60.00 --right-of DVI-I-2-2
-#exec --no-startup-id xrandr --output DVI-I-2-2 --primary --mode 1920x1080 --rate 60.00 --right-of eDP-1
+# exec --no-startup-id xrandr --output DVI-I-2-2 --mode 1920x1080 --rate 60.00 --above eDP-1 --primary --output DVI-I-1-1 --mode 1920x1080 --rate 60.00 --right-of DVI-I-2-2
+# exec --no-startup-id xrandr --output DVI-I-2-2 --primary --mode 1920x1080 --rate 60.00 --right-of eDP-1
+# exec --no-startup-id xrandr --output HDMI-1 --primary --mode 1920x1080 --rate 60.00 --right-of eDP-1
 
 #exec --no-startup-id xrandr --output DP-3 --mode 1920x1080 --rate 60.00 --right-of eDP-1 --primary 
 #set audio
