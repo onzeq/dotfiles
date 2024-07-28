@@ -95,7 +95,10 @@ block = "menu"
 text = "\uf011 "
 [[block.items]]
 display = "   Sleep   "
-cmd = "systemctl suspend"
+cmd = "i3lock --color 000000 ; systemctl suspend"
+[[block.items]]
+display = "   Lock   "
+cmd = "i3lock --color 000000"
 [[block.items]]
 display = " Power Off "
 cmd = "poweroff"

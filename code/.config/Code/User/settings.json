@@ -5,7 +5,10 @@
     "editor.rulers": [
         79
     ],
+    "editor.renderLineHighlight": "all",
     "workbench.colorCustomizations": {
+    "editor.lineHighlightBackground": "#3c3b3b",
+    "editor.lineHighlightBorder": "#342e2e",
     "editorRuler.foreground": "#ff4081",
   },
     "editor.wordWrap": "off",
@@ -13,7 +16,7 @@
     "python.defaultInterpreterPath": "/usr/bin/python3",
     "explorer.confirmDelete": false,
     "files.autoSave": "afterDelay",
-    "editor.lineNumbers": "relative",
+    "editor.lineNumbers": "on",
 
     // Latex
     "latex-workshop.latex.autoBuild.cleanAndRetry.enabled": false,

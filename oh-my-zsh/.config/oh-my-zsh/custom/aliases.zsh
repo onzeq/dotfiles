@@ -85,7 +85,7 @@ alias arduino_ide="$HOME/arduino_ide/arduino-ide"
 alias ods="onedrive --synchronize"
 
 # i3 lock color black as standard
-alias lock="i3lock --color 000000"
+alias ilock="i3lock --color 000000"
 alias matr="echo 5513235"
 
 alias ffpol="sudo nvim /usr/lib/firefox/distribution/policies.json"
