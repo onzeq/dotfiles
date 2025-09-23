@@ -122,5 +122,6 @@ source $ZSH_CUSTOM/functions.zsh
 # source plugins
 #source $HOME/.config/zsh/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 #
-source <(fzf --zsh)
+
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 

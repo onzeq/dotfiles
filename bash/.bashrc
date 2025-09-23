@@ -234,7 +234,6 @@ export WSEXERCISM='$HOME/snap/exercism/current/exercism/rust'
 
 # variable for workspace studies
 export STUDY='~/OneDrive/Studium/02_Master_ESE/1_Semester'
-[ -f ~/.fzf.bash ] && source ~/.fzf.bash
 
 
 # function to create and than change directory
@@ -260,3 +259,7 @@ alias ese="cd /home/jake/OneDrive/Studium/02_Master_ESE"
 # wine executables
 alias ltspice="wine \"C:\\LTspice\\LTspice.exe\""
 neofetch
+
+
+[ -f ~/.fzf.bash ] && source ~/.fzf.bash
+
