@@ -243,6 +243,7 @@ bindsym $mod+Ctrl+Right move workspace to output right
 # assign apps to workspaces
 for_window [class="firefox"] move to workspace $ws2
 for_window [class="thunderbird"] move to workspace $ws5
+for_window [class="Code"] move to workspace $ws3
 
 # start calculator always in floating mode
 

@@ -50,7 +50,7 @@
     "vim.visualModeKeyBindings": [
         {
             "before": ["<leader>", "p"],
-            "after": "[[\"_dP]]"
+            "after":  ["\"","_","d","p"]
         },
     ],
     // Normal Mode Mappings

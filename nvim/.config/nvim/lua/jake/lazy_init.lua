@@ -165,6 +165,6 @@ require('lazy').setup({
     build = ':TSUpdate',
   },
 })
-require("lazy.telescope_conf")
-require("lazy.tree")
-require("lazy.treesitter_conf")
+require("jake.lazy.telescope_conf")
+require("jake.lazy.tree")
+require("jake.lazy.treesitter_conf")
