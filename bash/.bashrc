@@ -263,3 +263,5 @@ neofetch
 
 [ -f ~/.fzf.bash ] && source ~/.fzf.bash
 
+
+export STM32_PRG_PATH=/home/jake/STMicroelectronics/STM32Cube/STM32CubeProgrammer/bin
