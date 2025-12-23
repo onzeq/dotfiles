@@ -75,6 +75,16 @@
         "key": "ctrl+shift+m",
         "command": "workbench.action.tasks.runTask",
         "args": "make_workspace"
+    },
+    {
+        "key": "ctrl+alt+p",
+        "command": "workbench.action.gotoSymbol",
+        "when": "!accessibilityHelpIsShown && !accessibleViewIsShown"
+    },
+    {
+        "key": "ctrl+shift+o",
+        "command": "-workbench.action.gotoSymbol",
+        "when": "!accessibilityHelpIsShown && !accessibleViewIsShown"
     }
 
 ]

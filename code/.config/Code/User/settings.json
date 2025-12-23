@@ -12,16 +12,13 @@
     "editorRuler.foreground": "#ff4081",
   },
     "editor.wordWrap": "off",
-    "terminal.integrated.enableMultiLinePasteWarning": false,
     "python.defaultInterpreterPath": "/usr/bin/python3",
     "explorer.confirmDelete": false,
     "files.autoSave": "afterDelay",
-    "editor.lineNumbers": "on",
-
-    // Latex
-    "latex-workshop.latex.autoBuild.cleanAndRetry.enabled": false,
-    "latex-workshop.latex.autoBuild.run": "never",
-    "latex-workshop.latex.outDir": "./Output",
+    "editor.lineNumbers": "relative",
+    "editor.detectIndentation": false,
+    "editor.tabSize": 4,
+    "editor.insertSpaces": true,
 
     // Vim specific settings & mappings
     "vim.leader": "<SPACE>",
@@ -43,6 +40,10 @@
         {
             "before": ["ctrl+c"],
             "after": ["<ESC>"]
+        },
+        {
+            "before": ["ctrl+a"],
+            "after": ["<ESC>"]
         }
     ],
 
@@ -50,7 +51,7 @@
     "vim.visualModeKeyBindings": [
         {
             "before": ["<leader>", "p"],
-            "after":  ["\"","_","d","p"]
+            "after":  ["\"","_","d","P"]
         },
     ],
     // Normal Mode Mappings
@@ -79,7 +80,14 @@
         ],
         "silent": true
     },
-
+    {
+        "before": ["H"],
+        "after": ["^"]
+    },
+    {
+        "before": ["L"],
+        "after": ["$"]
+    },
     // navigate through editor panes with vim keys and leader
     {
         "before": ["<leader>", "h"],
@@ -138,7 +146,39 @@
             "workbench.action.moveEditorToAboveGroup"
         ],
         "silent": true
-    }
+    },
+    {
+        "before": ["g", "d"],
+        "commands": [
+            "editor.action.revealDefinition"
+        ],
+        "when": "editorHasDefinitionProvider && editorTextFocus",
+        "silent": true
+    },
+    {
+        "before": ["g", "D"],
+        "commands": [
+            "editor.action.revealDeclaration"
+        ],
+        "when": "editorHasDeclarationProvider && !isInEmbeddedEditor",
+        "silent": true
+    },
+    {
+        "before": ["g", "r"],
+        "commands": [
+            "editor.action.goToReferences"
+        ],
+        "when": "editorHasReferenceProvider && editorTextFocus && !inReferenceSearchEditor && !isInEmbeddedEditor",
+        "silent": true
+    },
+    {
+        "before": ["g", "p"],
+        "commands": [
+            "workbench.action.gotoSymbol"
+        ],
+        "silent": true
+    },
+    
     ], 
 
     // Normal mode mappings non recursive
@@ -163,7 +203,15 @@
           "before": ["K"],
           "commands": ["lineBreakInsert"],
           "silent": true
-        }
+        },
+        {
+            "before": ["<C-o>"],
+            "commands": ["workbench.action.navigateBack"]
+        },
+        {
+            "before": ["<C-i>"],
+            "commands": ["workbench.action.navigateForward"]
+        },
             
     ],
     "terminal.integrated.allowMnemonics": true,
@@ -172,6 +220,11 @@
     "editor.multiCursorModifier": "ctrlCmd",
     "scm.inputFontFamily": "",
     "editor.fontFamily": "SauceCodeProNerdFont",
-    "C_Cpp.default.compilerPath": "/home/jake/ti/ccstheia151/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/bin/cl430",
+    "C_Cpp.intelliSenseEngine": "default",
+    "terminal.integrated.defaultProfile.windows": "Git Bash",
+    // Shit AI stuff
+    "chat.agent.enabled": false,
+    "workbench.commandPalette.showAskInChat": false,
     "workbench.secondarySideBar.defaultVisibility": "hidden",
+    "security.workspace.trust.untrustedFiles": "open",
 }
